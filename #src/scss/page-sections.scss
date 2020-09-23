@@ -1,0 +1,439 @@
+.products {
+  &__inner {
+    display: flex;
+    padding-left: rem-calc(50);
+  }
+
+  &__text {
+    max-width: rem-calc(440);
+
+    p {
+      margin-bottom: rem-calc(30);
+    }
+  }
+
+  &__slider-box {
+    position: relative;
+    padding-top: rem-calc(110);
+  }
+
+  &__slider {
+    max-width: rem-calc(560);
+  }
+
+  &__slider-text {
+    @extend %ubuntu-medium;
+    width: rem-calc(285);
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    text-align: right;
+    font-size: rem-calc(24);
+    line-height: rem-calc(28);
+    color: #FFFFFF;
+    z-index: 5;
+  }
+}
+
+.benefits {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 25px;
+  }
+
+  &__item {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+
+    &:nth-child(even) {
+      margin-left: 40px;
+      transform: translateY(25px);
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      transform: translateX(25px);
+    }
+
+    &:first-child {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 45px;
+        width: 245px;
+        background-image: url("../img/line1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        right: -63px;
+        top: 38px;
+      }
+    }
+
+    &:nth-child(3) {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 62px;
+        width: 463px;
+        background-image: url("../img/line2.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        top: -70px;
+        left: 170px;
+      }
+    }
+
+    &:nth-child(4) {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 39px;
+        width: 254px;
+        background-image: url("../img/line3.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        top: 8px;
+        left: -245px;
+      }
+    }
+  }
+
+  &__num {
+    @extend %ubuntu-bold;
+    font-size: 36px;
+    line-height: 41px;
+    margin-right: rem-calc(10);
+  }
+
+  &__img {
+    position: relative;
+    margin-right: rem-calc(32);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: rem-calc(195);
+      height: rem-calc(130);
+      border: 2px solid #FFFFFF;
+      z-index: -1;
+    }
+  }
+
+  &__info {
+    width: 300px;
+  }
+
+  &__info-title {
+    @extend %ubuntu-bold;
+    width: 123px;
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__info-text {
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 130%;
+  }
+}
+
+.specification {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+
+  }
+
+  &__item-center {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__box {
+    position: relative;
+    width: 280px;
+    margin-top: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background-size: contain;
+    }
+  }
+
+  &__box-2 {
+    margin-top: rem-calc(140);
+  }
+
+  &__box-4 {
+    margin-top: rem-calc(160);
+  }
+
+  &__box-1::before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/pointer1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 229px;
+    height: 114px;
+    top: 16px;
+    right: -140px;
+
+  }
+
+  &__box-2::before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/pointer3.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 345px;
+    height: 81px;
+    right: -308px;
+    top: -65px;
+  }
+
+  &__box-3::before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/pointer2svg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 258px;
+    height: 103px;
+    left: -299px;
+    top: 16px;
+  }
+
+  &__box-4::before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/pointer4.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 115px;
+    height: 82px;
+    left: -180px;
+    top: -60px;
+  }
+
+  &__box-title {
+    @extend %ubuntu-bold;
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  &__box-text {
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 130%;
+  }
+}
+
+.question {
+  &__items {
+    max-width: 757px;
+    padding-bottom: 15px;
+
+  }
+
+  &__item {
+    max-width: 690px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 4px;
+    &:nth-child(3)::before{
+      position: absolute;
+      content: '';
+      top: -33px;
+      bottom: 25px;
+      right: -386px;
+      background-image: url("../img/questions-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 319px;
+      height: 125px;
+    }
+  }
+
+  &__item-title {
+    cursor: pointer;
+    position: relative;
+    @extend %ubuntu-medium;
+    font-size: 21px;
+    line-height: 28px;
+    color: rgba(#fff, .8);
+    padding: 20px 10px 24px 40px;
+
+    &::after {
+      position: absolute;
+      content: url("../img/accordion-arrow.svg");
+      width: 72px;
+      height: 67px;
+      top: 0;
+      right: -72px;
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item-text {
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 150%;
+    max-width: 640px;
+    padding: 0 5px 75px 50px;
+    margin: 0;
+    display: none;
+  }
+}
+.question__item--active .question__item-text{
+  display: block;
+}
+.question__item--active .question__item-title::after{
+  transform: rotate(180deg);
+}
+.contacts{
+  &__inner{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+  &__info{
+    max-width: 240px;
+    margin-right: 60px;
+  }
+  &__info-title{
+    @extend %ubuntu-bold;
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0 0 13px;
+  }
+  &__info-box{
+    margin-bottom: 30px;
+  }
+  &__info-phone{
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__info-email{
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 18px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__form{
+    max-width: 570px;
+    margin-right: 106px;
+  }
+  &__form-title{
+    @extend %ubuntu-bold;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  &__form-text{
+    @extend %ubuntu-light;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 0 12px;
+  }
+  &__form-line{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-textarea{
+    width: 100%;
+    @extend %ubuntu-regular;
+    font-size: 13px;
+    line-height: 130%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(#fff, 0.4);
+    margin-top: 10px;
+    min-height: 144px;
+  }
+  &__form-input{
+    @extend %ubuntu-regular;
+    font-size: 13px;
+    line-height: 130%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 49%;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(#fff, 0.4);
+  }
+  &__form-btn{
+    @extend %ubuntu-bold;
+  margin-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 9px 15px 9px 15px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in;
+    &:hover{
+      color: #000000;
+      background-color: #ffffff;
+    }
+  }
+  &__social{
+    margin-left: 106px;
+  }
+  &__social-link{
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  &__social-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 172px;
+  }
+}
+.footer{
+  margin-top: 136px;
+  @extend %ubuntu-light;
+  text-align: right;
+  font-size: 13px;
+  line-height: 130%;
+  color: rgba(#fff, 0.4);
+}

@@ -1,0 +1,56 @@
+.header{
+  position: fixed;
+  left: 0;
+  top: 30px;
+  right: 0;
+  z-index: 10;
+  &__btn{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 6px 28px;
+    border-radius: 3px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+    &:hover{
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+  &__phone{
+    @extend %ubuntu-bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.header__inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: rem-calc(30);
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 17px;
+  @extend %ubuntu-medium;
+}
+.menu{
+  &__list-item{
+    display: inline-block;
+    &.active a {
+     border-bottom: 1px solid #ffffff;
+    }
+    & + .menu__list-item{
+      padding-left: 20px;
+    }
+  }
+  &__list-phone{
+    display: none;
+  }
+  &__btn{
+    display: none;
+  }
+}
