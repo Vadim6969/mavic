@@ -20,19 +20,9 @@ document.querySelectorAll('.question__item').forEach(function (section) {
 
     })
 })
-    new fullpage('#fullpage', {
-        //options here
-        scrollOverflow: true,
-        autoScrolling:true,
-        sectionSelector: '.page-section',
-        navigation: true,
-        scrollBar: true,
-        scrollingSpeed: 700,
-        anchors: ['top', 'products', 'benefits', 'specification', 'question', 'contacts'],
-        menu: '#headerNav',
-    });
-    //methods
-    fullpage_api.setAllowScrolling(false);
+
+
+
 
     // menu
 document.querySelector('.menu__btn').addEventListener('click', function () {
